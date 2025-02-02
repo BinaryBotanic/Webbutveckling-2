@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Responsive Mall.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="myCustom.css">
+<body>
+
+<!-- Delen du ser över formuläret -->
+<div class="w3-container w3-yellow">
+  <h1>Survey</h1> 
+  <p>Vart vill du resa?</p> 
+</div>
+
+<br>
+
+<div class="w3-row-padding">
+    <div class="w3-third" id="formQuestion1">
+
+        <!-- Där du skriver namn och mail -->
+        <fieldset>
+        <legend>Vem är du?</legend>
+
+        <!--Skickar mail från-->
+        <form id="demo" action="mailto:matildhed1@student.astar.se" method="post" enctype="text/plain">
+            Förnamn:<br>
+            <input type="text" name="fname" id="fname" required> <br>
+            
+            Efternamn:<br>
+            <input type="text" name="ename" id="ename" required> <br>
+            
+            E-mail:<br>
+            <input type="email" name="email" id="email" required> <br>
+            
+        </fieldset>
+
+        <br>
+
+        <!-- Rutan runt nästa resemål och textbox -->
+        <fieldset>
+            Vad är ditt nästa resemål?:<br>
+            <textarea name="msg" id="msg" cols="45" rows="5" required></textarea> <br>
+        </fieldset>
+
+                        <!-- Rese typ -->
+                        <fieldset>
+                            <legend>Resetyper</legend>
+                            <p>Vilken typ av resa vill du boka?</p>
+                            <input type="radio" id="vacation" name="travel_type" value="semester" required>
+                            <label for="vacation">Semester</label><br>
+            
+                            <input type="radio" id="business" name="travel_type" value="affärsresa">
+                            <label for="business">Affärsresa</label><br>
+            
+                            <input type="radio" id="adventure" name="travel_type" value="äventyr">
+                            <label for="adventure">Äventyrsresa</label><br>
+                        </fieldset>
+            
+                        <!-- Quiz -->
+                        <fieldset>
+                            <legend>Quiz</legend>
+                            <p>Vad vet du om världen??</p>
+            
+                            <label for="quiz1">1. Vart vill du resa ifrån?</label><br>
+                            <input type="text" id="quiz1" name="quiz1" required><br>
+            
+                            <label for="quiz2">2. Hur många länder har du besökt?</label><br>
+                            <input type="number" id="quiz2" name="quiz2" required><br>
+            
+                            <label for="quiz3">3. Vad är din ekonomi för resan?</label><br>
+                            <input type="number" id="quiz3" name="quiz3" required><br>
+            
+                            <label for="quiz4">4. Vad vill du uppnå med din resa?</label><br>
+                            <input type="text" id="quiz4" name="quiz4" required><br>
+            
+                            <label for="quiz5">5. Hur många är ni som ska resa?</label><br>
+                            <input type="number" id="quiz5" name="quiz5" required><br>
+                        </fieldset>
+                        <br>
+
+            <!--Skickar mail när man klickar submit-->
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
