@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Responsive Mall.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/myCustom.css">
+<script src="JS/myCustomJs.js"></script>
+<script src="JS/favourites.js"></script>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="london.html">London</a>
+    <a href="paris.html">Paris</a>
+    <a href="#tokyo">Tokyo</a>
+    <a href="cities.html">Cities Bucketlist</a>
+    <a href="contact.html">Contact</a>
+    <a href="favouritesgrund.html">Favourites enkel</a>
+    <a href="favourites.html" class="active w3-khaki">Favourites</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="w3-container w3-khaki">
+  <h1>Your favourite travel countries</h1> 
+</div>
+
+<div class="w3-row-padding">
+    <form>
+        <div class="w3-quarter w3-padding">
+            <label for="user"><b>Register a user:</b></label>
+            <br>
+            Username:<br>
+            <input type="text" name="uname"/> <br>
+            <br>
+        </div>
+        <div class="w3-quarter w3-padding">
+            <label for="Countries"><b>Choose country:</b></label>
+            <br>
+            <select name="Countries" size="4" multiple>
+                <option value="England">England</option>
+                <option value="France">France</option>
+                <option value="Japan">Japan</option>
+                <option value="Italy">Italy</option>
+                <option value="USA">USA</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Germany">Germany</option>
+                <option value="Austria">Austria</option>
+                <option value="Australia">Australia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Canada">Canada</option>
+                <option value="Belgien">Belgien</option>
+                <option value="Japan">Japan</option>
+                <option value="North Korea">North Korea</option>
+                <option value="Spain">Spain</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Norway">Norway</option>
+                <option value="Finland">Finland</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Poland">Poland</option>
+                <option value="Greece">Greece</option>
+                <option value="Kroatia">Kroatia</option>
+            </select>
+            <br>
+            <br>
+            <button type="button" onclick="myFavourites()">Add a List</button>
+            <br>
+            <br>
+        </div>
+    </form>
+
+    <div class="w3-quarter w3-padding">
+        <form>
+            <label for="user"><b>Pick a user:</b></label>
+            <br>
+            Username:<br>
+            <input type="text" name="pname">
+            <br>
+            <br>
+            <button type="button" onclick="pickList()">Pick a List</button>
+        </form>
+    </div>
+    <div class="w3-quarter w3-padding">
+        <b id="changeHead">My favourite list:</b>
+        <div id="list">
+
+        </div>
+    </div>
+</div>
+
+<div class="footer w3-khaki">
+    <a href="contactform.html">Contact</a>
+</div>
+
+</body>
+</html>
