@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Mall.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Inlämining CSS Moment 2.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="london.html">London</a>
+    <a href="paris.html">Paris</a>
+    <a href="#tokyo">Tokyo</a>
+    <a href="cities.html" class="active">Cities Bucketlist</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="w3-container w3-yellow">
+    <h1>Vart vill du resa?</h1>
+    <p>Fyll i de 5 städer du helst hade besökt!</p>
+</div>
+
+<div class="w3-row-padding">
+    <div class="w3-third" id="formQuestion1">
+        <p>Mina städer</p>
+        <form id="cityForm">
+            <input type="text" id="new" placeholder="Vart vill du resa?">
+            <button type="button" id="addCityBtn">Lägg till Städer</button>
+            <p>Städer:</p>
+            <textarea name="city1" id="city1" rows="1" readonly></textarea><br>
+            <textarea name="city2" id="city2" rows="1" readonly></textarea><br>
+            <textarea name="city3" id="city3" rows="1" readonly></textarea><br>
+            <textarea name="city4" id="city4" rows="1" readonly></textarea><br>
+            <textarea name="city5" id="city5" rows="1" readonly></textarea><br>
+        </form>
+        <p id="cityList"></p>
+        <p id="details"></p>
+        <button id="sortBtn">Sortera</button>
+    </div>
+</div>
+
+<div class="w3-container w3-yellow">
+    <a href="contactform.html"><p>Contact</p></a>
+</div>
+
+<script src="Inlämining JS Moment 2.js"></script>
+</body>
